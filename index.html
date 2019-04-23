@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="css/materialize2.min.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="css/main.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+
+	<nav>
+    <div class="nav-wrapper teal">
+      <a href="#" class="brand-logo">Just Travelous</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Destinations</a></li>
+		<li><a href="badges.html">Events</a></li>
+        <li><a href="badges.html">Plan Tour</a></li>
+        <li><a href="collapsible.html">Contacts</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Section: Slider -->
+  <section class="slider">
+    <ul class="slides">
+      <li>
+	  <p>check2</p>
+        <img src="images/s1.jpg" alt="">
+        <div class="caption center-align">
+          <h2>TOUR AROUND TAMIL NADU</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Take your dream vacation!</h5>
+          <a href="#popular" class="btn btn-large">Learn More</a>
+        </div>
+      </li>
+      <li>
+        <img src="images/s2.jpg" alt="">
+        <div class="caption left-align">
+          <h2>Get personalized tours!</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Personalised tours based on your requirements!</h5>
+          <a href="#" class="btn btn-large">Learn More</a>
+        </div>
+      </li>
+	  <!--
+      <li>
+        <img src="img/resort3.jpg" alt="">
+        <div class="caption right-align">
+          <h2>Group & Individual Getaways</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Harum voluptatum veniam maiores provident laudantium quam!</h5>
+          <a href="#" class="btn btn-large">Learn More</a>
+        </div>
+      </li> -->
+    </ul>
+  </section>
+  
+  <div class="carousel container">
+    <a class="carousel-item" href="#one!"><img src="images/im1.jpg"></a>
+    <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
+    <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
+    <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
+    <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
+  </div>
+  
+    <div class="carousel">
+    <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
+    <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
+    <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
+    <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
+    <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
+  </div>
+      <!--JavaScript at end of body for optimized loading-->
+      <script>
+    $(document).ready(function () {
+      // Init Side Nav
+      $('.button-collapse').sideNav();
+
+      // Init Slider
+      $('.slider').slider({
+        indicators: false,
+        height: 500,
+        transition: 500,
+        interval: 6000
+      });
+
+      // Autocomplete
+      $('.autocomplete').autocomplete({
+        data: {
+          "Aruba": null,
+          "Cancun Mexico": null,
+          "Hawaii": null,
+          "Florida": null,
+          "California": null,
+          "Jamaica": null,
+          "Europe": null,
+          "The Bahamas": null,
+        }
+      });
+
+      // Init Scrollspy
+      $('.scrollspy').scrollSpy();
+
+    });
+	
+	//carousel
+	document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.carousel').carousel();
+  });
+  </script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+	  <script type="text/javascript" src="js/materialize2.min.js"></script>
+	  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	  
+    </body>
+  </html>
